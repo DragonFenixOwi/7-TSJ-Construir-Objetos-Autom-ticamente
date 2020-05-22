@@ -7,9 +7,9 @@
 */
 
 /*
-    ------------------
-    Variables Globales
-    ------------------
+    ------------------------
+        Variables Globales
+    ------------------------
 */
 
 //"numero_de_pedidos" define la cantidad de pedidos de ensamblaje
@@ -19,9 +19,9 @@ var cantidad_de_pedidos =0;
 var modelo = '';
 
 /*
-    ---------
-    Funciones
-    ---------
+    ----------------
+        Funciones
+    ----------------
 */
 
 
@@ -93,9 +93,9 @@ function instancia_de_ensamble(numero_de_pedidos,modelo)
 
 
 /*
-    ---------------------------
-    Main - Desarrollo principal
-    ---------------------------
+    -----------------------------------
+        Main - Desarrollo principal
+    -----------------------------------
 */
 
 
@@ -110,9 +110,9 @@ function ensamblaje_de_coche(tipo_de_auto_carroceria, tipo_de_motor, chasis, Fre
     }
 
 /*
-Llamada de funcion para crear las instancias. Enviando:
-    - "la cantidad de autos"  que se deben ensamblarcomo "primer parametro"
-    - "El modelo del auto" que se quiere ensamblar "como segundo parametro"
+Llamada a la  función "instancia_de_ensamble", para crear las instancias. Enviando:
+    - "la cantidad de autos"  que se deben ensamblar, como "primer parametro"
+    - "El modelo del auto" que se quiere ensamblar, "como segundo parametro"
 */
 instancia_de_ensamble(10,'Land Rover');
 instancia_de_ensamble(10,'Toyota');
