@@ -1,25 +1,28 @@
-    /*
-        ----------------------------------
+/*
+    -----------------------------------------------------------
         Autor: Osvaldo Aquino
         nickname: owi
         Constructor e instancia, en POO. Ensamblaje de autos.
-        ----------------------------------
-    */
+    -----------------------------------------------------------
+*/
 
-    /*
-        Variables Globales
-        -----------
-    */
+/*
+    ------------------
+    Variables Globales
+    ------------------
+*/
 
-    //"numero_de_pedidos" define la cantidad de pedidos de ensamblaje
-    var cantidad_de_pedidos =0;
+//"numero_de_pedidos" define la cantidad de pedidos de ensamblaje
+var cantidad_de_pedidos =0;
 
-    var modelo = '';
+// variable que identifica los "modelos de los pedidos", cuando se llama la función instancia_de_ensamble
+var modelo = '';
 
-    /*
-        Funciones
-        -----------
-    */
+/*
+    ---------
+    Funciones
+    ---------
+*/
 
 
 //función "instancia_de_ensamble" : crea instancias para Impresión en la consola del navegador 
@@ -89,22 +92,28 @@ function instancia_de_ensamble(numero_de_pedidos,modelo)
 
 
 
-    /*
-        Main - Desarrollo principal
-    */
+/*
+    ---------------------------
+    Main - Desarrollo principal
+    ---------------------------
+*/
 
 
-    // Creando Constructor
-    function ensamblaje_de_coche(tipo_de_auto_carroceria, tipo_de_motor, chasis, Frenos) 
-        {
-            // Declarando las propiedades de la plantilla
+// Creando Constructor
+function ensamblaje_de_coche(tipo_de_auto_carroceria, tipo_de_motor, chasis, Frenos) 
+    {
+        // Declarando las propiedades de la plantilla
             this.tipo_de_auto_carroceria = tipo_de_auto_carroceria;
             this.tipo_de_motor = tipo_de_motor;
             this.chasis = chasis;
             this.Frenos = Frenos;
-        }
+    }
 
-//Llamada de funcion para crear las instancias. Enviando la cantidad de autos que se deben ensamblar
+/*
+Llamada de funcion para crear las instancias. Enviando:
+    - "la cantidad de autos"  que se deben ensamblarcomo "primer parametro"
+    - "El modelo del auto" que se quiere ensamblar "como segundo parametro"
+*/
 instancia_de_ensamble(10,'Land Rover');
 instancia_de_ensamble(10,'Toyota');
 instancia_de_ensamble(10,'Nissan');
